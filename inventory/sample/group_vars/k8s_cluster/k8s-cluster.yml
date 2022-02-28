@@ -17,7 +17,7 @@ kube_token_dir: "{{ kube_config_dir }}/tokens"
 kube_api_anonymous_auth: true
 
 ## Change this to use another Kubernetes version, e.g. a current beta release
-kube_version: v1.23.3
+kube_version: v1.23.4
 
 # Where the binaries will be downloaded.
 # Note: ensure that you've enough disk space (about 1G)
@@ -146,7 +146,7 @@ kube_proxy_nodeport_addresses: >-
 #   {{ inventory_hostname }}
 #   {%- endif -%}
 
-## Encrypting Secret Data at Rest (experimental)
+## Encrypting Secret Data at Rest
 kube_encrypt_secret_data: false
 
 # Graceful Node Shutdown (Kubernetes >= 1.21.0), see https://kubernetes.io/blog/2021/04/21/graceful-node-shutdown-beta/
